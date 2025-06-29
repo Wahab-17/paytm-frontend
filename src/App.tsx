@@ -9,7 +9,6 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Send from "./pages/Send";
 
-import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +26,7 @@ const App = () => (
 
           <Route path="/send" element={<Send />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="*" element={<NotFound />} />
+          
 
         </Routes>
       </BrowserRouter>

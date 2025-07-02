@@ -8,7 +8,7 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Send from "./pages/Send";
-
+import { BalanceProvider } from "./context/BalanceContext.jsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +18,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+       <BalanceProvider>
+
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/signin" element={<Signin />} />
@@ -29,6 +31,7 @@ const App = () => (
           
 
         </Routes>
+        </BalanceProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Button1 } from "./Button1";
+import { Button3 } from "./Button3";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -50,7 +50,7 @@ function User({user}) {
         </div>
 
         <div className="flex flex-col justify-center h-ful">
-            <Button1 onClick={(e) => {
+            <Button3 onClick={(e) => {
                 navigate("/send?id=" + user._id + "&name=" + user.firstName);
             }} label={"Send Money"} />
         </div>

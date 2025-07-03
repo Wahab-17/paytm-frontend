@@ -9,6 +9,7 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Send from "./pages/Send";
 import { BalanceProvider } from "./context/BalanceContext.jsx";
+import Transactions from "./pages/Transaction.js";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,8 @@ const App = () => (
 
           <Route path="/send" element={<Send />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/transactions" element={<Transactions />} />
+
           
 
         </Routes>
